@@ -19,7 +19,7 @@ body {
   header {
     background: grey;
     grid-area: header;
-    text-align: center;
+    text-align: left;
     padding: 1.5em;
   }
   /* styling van de navigatie bar / filter bar */
@@ -34,9 +34,13 @@ body {
   }
   /* de styling van de footer */
   footer {
-    background: whitesmoke;
+    background: white;
     grid-area: footer;
   }
+ footer p {
+  font-size: 0.5em;
+}
+
 
   /* initiatieven */
 main {
