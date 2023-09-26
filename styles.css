@@ -6,14 +6,37 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header nav {
-  height: 80px;
-  background: #46AA64;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2)
-}
+/* main layout */
+body {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'subnav'
+      'main'
+      'footer';
+  }
+  /* styling van de header bovenaan de pagina */
+  header {
+    background: grey;
+    grid-area: header;
+    text-align: center;
+    padding: 1.5em;
+  }
+  /* styling van de navigatie bar / filter bar */
+  body > nav {
+    background: lightgray;
+    grid-area: subnav;
+  }
+  /* de styling van het document */
+  main {
+    background: white;
+    grid-area: main;
+  }
+  /* de styling van de footer */
+  footer {
+    background: whitesmoke;
+    grid-area: footer;
+  }
 
 .logo {
   color: aliceblue;
