@@ -6,6 +6,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+header nav {
+  background: #46AA64;
+  color: aliceblue;
+}
 /* main layout */
 body {
     display: grid;
