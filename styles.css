@@ -1,3 +1,4 @@
+@@ -1,85 +1,90 @@
 /* styling van de algemene dingen in het hele document */
 * {
     padding: 0;
@@ -6,15 +7,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header nav {
-  height: 80px;
-  background: #46AA64;
-  color: aliceblue;
-  display: flex;
-  justify-content: space-between;
-  padding: 0rem calc((100vw - 1300px) / 2)
-  
-}
 /* main layout */
 body {
     display: grid;
@@ -28,13 +20,38 @@ body {
   header {
     background: grey;
     grid-area: header;
-    text-align: center;
+    text-align: left;
     padding: 1.5em;
+  }
+  header nav {
+    height: 80px;
+    background: #46AA64;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem calc((100vw - 1300px) / 2)
+  }
+  .logo {
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    font-style: italic;
+    padding: 0 2rem
+  }
+  nav a {
+    text-decoration: none;
+    color:aliceblue;
+    padding: 0 1.5rem;
   }
   /* styling van de navigatie bar / filter bar */
   body > nav {
     background: lightgray;
     grid-area: subnav;
+  }
+  nav ul {
+    margin-top: 1em;
+    margin-left: 2.2em;
+    list-style: none;
   }
   /* de styling van het document */
   main {
@@ -43,20 +60,51 @@ body {
   }
   /* de styling van de footer */
   footer {
-    background: whitesmoke;
+    background: white;
     grid-area: footer;
   }
-
-.logo {
-  color: aliceblue;
-  font-size: 1.5rem;
-  font-weight: bold; 
-  font-style: italic;
-  padding: 0 2rem
+ footer p {
+  font-size: 0.5em;
 }
 
-nav a {
-  text-decoration: none;
-  color:aliceblue;
-  padding: 0 1.5rem;
-}
+
+  /* initiatieven */
+main {
+    padding: 2rem; /* de ruimte tussen de tekst en de rand van de box*/
+  }
+  main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; /* afstand tussen de boxes */
+    justify-content: center;
+  }
+  main li {
+    display: block;
+    padding: 1em;
+    width: 18em;
+    height: 12em;
+    background: whitesmoke;
+    border-radius: 1rem; /* de hoek van een box word minder scherp */
+  }
+  h2 a {
+    text-decoration: none; /* zorgt ervoor dat er geen lijn onder de link staat */
+    color: black;
+  }
+  /* styling wanneer je over de h2 met je muis hovered */
+  h2 a:hover {
+    color: grey;
+    transition: 200ms; /* de duur van de overloop van verandering van kleur */
+  }
+
+  /* kleiner scherm */
+  @media (min-width: 40rem) {
+    body {
+      grid-template-columns: 10rem 1fr;
+      grid-template-areas:
+        'header header'
+        'subnav main'
+        'footer footer';
+    }
+  }
