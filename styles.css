@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main layout */
+body {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'subnav'
+      'main'
+      'footer';
+  }
+  header {
+    background: grey;
+    grid-area: header;
+    text-align: center;
+    padding: 1em;
+  }
+  body > nav {
+    background: lightgray;
+    grid-area: subnav;
+  }
+  main {
+    background: white;
+    grid-area: main;
+  }
+  footer {
+    background: whitesmoke;
+    grid-area: footer;
+  }
+
+  /* initiatieven */
+main {
+    padding: 2rem;
+  }
+  main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  main li {
+    display: block;
+    padding: 1em;
+    width: 18em;
+    height: 12em;
+    background: whitesmoke;
+    border-radius: 1rem;
+  }
+
+  /* telefoon scherm */
+  @media (min-width: 40rem) {
+    body {
+      grid-template-columns: 10rem 1fr;
+      grid-template-areas:
+        'header header'
+        'subnav main'
+        'footer footer';
+    }
+  }
