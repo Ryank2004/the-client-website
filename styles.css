@@ -1,7 +1,9 @@
+/* styling van de algemene dingen in het hele document */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* main layout */
@@ -13,20 +15,24 @@ body {
       'main'
       'footer';
   }
+  /* styling van de header bovenaan de pagina */
   header {
     background: grey;
     grid-area: header;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
   }
+  /* styling van de navigatie bar / filter bar */
   body > nav {
     background: lightgray;
     grid-area: subnav;
   }
+  /* de styling van het document */
   main {
     background: white;
     grid-area: main;
   }
+  /* de styling van de footer */
   footer {
     background: whitesmoke;
     grid-area: footer;
@@ -34,14 +40,14 @@ body {
 
   /* initiatieven */
 main {
-    padding: 2rem;
+    padding: 2rem; /* de ruimte tussen de tekst en de rand van de box*/
   }
   main ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem; /* afstand tussen de boxes */
     justify-content: center;
   }
   main li {
@@ -50,10 +56,19 @@ main {
     width: 18em;
     height: 12em;
     background: whitesmoke;
-    border-radius: 1rem;
+    border-radius: 1rem; /* de hoek van een box word minder scherp */
+  }
+  h2 a {
+    text-decoration: none; /* zorgt ervoor dat er geen lijn onder de link staat */
+    color: black;
+  }
+  /* styling wanneer je over de h2 met je muis hovered */
+  h2 a:hover {
+    color: grey;
+    transition: 200ms; /* de duur van de overloop van verandering van kleur */
   }
 
-  /* telefoon scherm */
+  /* kleiner scherm */
   @media (min-width: 40rem) {
     body {
       grid-template-columns: 10rem 1fr;
