@@ -6,75 +6,25 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* main layout */
-body {
-    display: grid;
-    grid-template-areas:
-      'header'
-      'subnav'
-      'main'
-      'footer';
-  }
-  /* styling van de header bovenaan de pagina */
-  header {
-    background: grey;
-    grid-area: header;
-    text-align: center;
-    padding: 1.5em;
-  }
-  /* styling van de navigatie bar / filter bar */
-  body > nav {
-    background: lightgray;
-    grid-area: subnav;
-  }
-  /* de styling van het document */
-  main {
-    background: white;
-    grid-area: main;
-  }
-  /* de styling van de footer */
-  footer {
-    background: whitesmoke;
-    grid-area: footer;
-  }
+header nav {
+  height: 80px;
+  background: #46AA64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2)
+}
 
-  /* initiatieven */
-main {
-    padding: 2rem; /* de ruimte tussen de tekst en de rand van de box*/
-  }
-  main ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem; /* afstand tussen de boxes */
-    justify-content: center;
-  }
-  main li {
-    display: block;
-    padding: 1em;
-    width: 18em;
-    height: 12em;
-    background: whitesmoke;
-    border-radius: 1rem; /* de hoek van een box word minder scherp */
-  }
-  h2 a {
-    text-decoration: none; /* zorgt ervoor dat er geen lijn onder de link staat */
-    color: black;
-  }
-  /* styling wanneer je over de h2 met je muis hovered */
-  h2 a:hover {
-    color: grey;
-    transition: 200ms; /* de duur van de overloop van verandering van kleur */
-  }
+.logo {
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: bold; 
+  font-style: italic;
+  padding: 0 2rem
+}
 
-  /* kleiner scherm */
-  @media (min-width: 40rem) {
-    body {
-      grid-template-columns: 10rem 1fr;
-      grid-template-areas:
-        'header header'
-        'subnav main'
-        'footer footer';
-    }
-  }
+nav a {
+  text-decoration: none;
+  color:aliceblue;
+  padding: 0 1.5rem;
+}
