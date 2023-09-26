@@ -27,6 +27,11 @@ body {
     background: lightgray;
     grid-area: subnav;
   }
+  nav ul {
+    margin-top: 1em;
+    margin-left: 2.2em;
+    list-style: none;
+  }
   /* de styling van het document */
   main {
     background: white;
