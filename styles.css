@@ -7,7 +7,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header nav {
+header {
   height: 80px;
   background: #46AA64;
   color: aliceblue;
@@ -24,21 +24,7 @@ body {
       'subnav'
       'main'
       'footer';
-  }
-  /* styling van de header bovenaan de pagina */
-  header {
-    background: grey;
-    grid-area: header;
-    text-align: left;
-    padding: 1.5em;
-  }
-  header nav {
-    height: 80px;
-    background: #46AA64;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem calc((100vw - 1300px) / 2)
+  
   }
   .logo {
     color: aliceblue;
