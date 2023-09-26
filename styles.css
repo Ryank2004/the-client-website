@@ -7,6 +7,15 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+header nav {
+  height: 80px;
+  background: #46AA64;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem calc((100vw - 1300px) / 2)
+  
+}
 /* main layout */
 body {
     display: grid;
