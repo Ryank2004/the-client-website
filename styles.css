@@ -5,6 +5,89 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+
+
+
+body {
+
+  display: grid;
+  grid-template-areas:
+  
+ "h h h h h h h h h h h h h h"
+ "n n n m m m m m m m m m m m"
+ "n n n m m m m m m m m m m m"
+ "n n n m m m m m m m m m m m"
+ "n n n m m m m m m m m m m m"
+ "f f f f f f f f f f f f f f"
+  ;
+  
+}
+
+
+header {
+
+grid-area: h;
+
+
+}
+
+
+/* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
+Algemene styling voor de sidebar dus */
+
+
+Main {
+
+grid-area: n;
+background-color: lightgray;
+display: block;
+padding: 1em;
+width: 8em;
+height: 100vh;
+line-height: 3em;
+
+}
+
+.initiatieven {
+margin-top: 5em;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 0.1em;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+div button {
+
+  padding: 1em;
+  margin: 0.5em;
+
+
+
+
+
+}
+
+/* ---------Sidebar Einde */
+
+
 ul {
   height: 80px;
   background:#46AA64;
@@ -12,6 +95,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0rem calc((100vw - 1300px) / 2);
+  grid-area: h;
+
 }
 
 .logo {
@@ -27,3 +112,13 @@ ul a {
   color: #0A3250;
   padding: 0 1.5rem;
 }
+
+
+footer{
+
+  background-color: white;
+  grid-area: f;
+  display: flex;
+  justify-content: baseline;
+  
+  }
