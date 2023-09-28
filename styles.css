@@ -5,54 +5,37 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-
-
-
 body {
-
   display: grid;
   grid-template-areas:
-  
- "h h h h h h h h h h h h h h"
- "n n n m m m m m m m m m m m"
- "n n n m m m m m m m m m m m"
- "n n n m m m m m m m m m m m"
- "n n n m m m m m m m m m m m"
- "f f f f f f f f f f f f f f"
-  ;
-  
+    'header'
+    'subnav'
+    'main'
+    'footer';
 }
-
 
 header {
-
-grid-area: h;
-
-
+grid-area: header;
 }
-
 
 /* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
 Algemene styling voor de sidebar dus */
 
-
-Main {
-
-grid-area: n;
+body > nav {
+grid-area: subnav;
 background-color: lightgray;
 display: block;
 padding: 1em;
 width: 8em;
 height: 100vh;
 line-height: 3em;
-
 }
 
-.initiatieven {
-margin-top: 5em;
+nav li {
+  text-decoration: none;
+  color: #0A3250;
+  list-style: none;
 }
-
 
 .dropdown {
   position: relative;
@@ -70,33 +53,25 @@ margin-top: 5em;
   z-index: 1;
 }
 
-.dropdown:active .dropdown-content {
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
 div button {
-
   padding: 1em;
   margin: 0.5em;
-
-
-
-
-
 }
 
 /* ---------Sidebar Einde */
 
-
-ul {
+header ul {
   height: 80px;
   background:#46AA64;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0rem calc((100vw - 1300px) / 2);
-  grid-area: h;
-
+  grid-area: header;
 }
 
 .logo {
@@ -107,18 +82,63 @@ ul {
   padding: 2rem;
 }
 
-ul a {
+
+header ul a {
+  text-decoration: none;
+  color: #0A3250;
+}
+
+nav ul a {
   text-decoration: none;
   color: #0A3250;
   padding: 0 1.5rem;
 }
 
+main {
+  grid-area: main;
+}
 
-footer{
-
-  background-color: white;
-  grid-area: f;
+/* Initiatieven */
+main {
+  padding: 2em;
+}
+main ul {
+  list-style: none;
   display: flex;
-  justify-content: baseline;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+main li {
+  display: block;
+  padding: 2em;
+  width: 25em;
+  height: 15em;
+  background: whitesmoke;
+  border-radius: 1rem;
+}
+
+main ul a {
+  text-decoration: none;
+  color: #0A3250;
+}
+
+
+@media (min-width: 40rem) {
+  body {
+    grid-template-columns: 10rem 1fr;
+    grid-template-areas:
+      'header header'
+      'subnav main'
+      'footer footer';
   }
+}
+
+/* styling footer */
+footer{
+  background-color: white;
+  grid-area: footer;
+  display: flex;
+  justify-content: baseline;  
+}
