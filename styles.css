@@ -122,7 +122,7 @@ main li {
   padding: 2em;
   width: 25em;
   height: 15em;
-  background: var(--white);
+  background: whitesmoke;
   border-radius: 1rem;
 }
 
@@ -144,7 +144,7 @@ main ul a {
 
 /* styling footer */
 footer{
-  background-color: white;
+  background-color: var(--white);
   grid-area: footer;
   display: flex;
   justify-content: baseline;  
