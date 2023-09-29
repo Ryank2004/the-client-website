@@ -5,6 +5,11 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* kleur aanpassing */
+:root {
+  --white: #ffffff;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -102,6 +107,7 @@ main {
 main {
   padding: 2em;
 }
+
 main ul {
   list-style: none;
   display: flex;
@@ -110,12 +116,13 @@ main ul {
   gap: 2em;
   justify-content: center;
 }
+
 main li {
   display: block;
   padding: 2em;
   width: 25em;
   height: 15em;
-  background: whitesmoke;
+  background: var(--white);
   border-radius: 1rem;
 }
 
@@ -142,3 +149,4 @@ footer{
   display: flex;
   justify-content: baseline;  
 }
+
