@@ -26,46 +26,113 @@ grid-area: header;
 /* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
 Algemene styling voor de sidebar dus */
 
-body > nav {
+
+nav {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 grid-area: subnav;
-background-color: lightgray;
-display: block;
-padding: 1em;
-width: 8em;
-height: 100vh;
-line-height: 3em;
+
 }
 
-nav li {
-  text-decoration: none;
-  color: #0A3250;
-  list-style: none;
+.sidebar {
+
+position: absolute;
+width: 60px;
+height: 100%;
+background-color: lightgrey;
+overflow: hidden;
+transition: 0.5s;
+list-style-type: none;}
+
+.sidebar:hover {
+
+  width: 11em;
+
+}
+nav img{
+
+  width: 1em;
+
 }
 
-.dropdown {
+.sidebar ul {
+
+  height: 100%;
   position: relative;
-  display: inline-block;
+
+  
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  border-radius: 0.1em;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+.sidebar ul li a:hover
+
+{
+
+opacity: 50%;
 }
 
-.dropdown:focus-within .dropdown-content {
-  display: block;
+.sidebar ul li {
+
+list-style: none;
+margin-top: 1em;
+
 }
 
-div button {
-  padding: 1em;
-  margin: 0.5em;
+.sidebar ul li:hover {
+
+  background: lightgrey;
+
 }
+
+.sidebar ul li a {
+
+  position: relative;
+  display: flex;
+
+white-space: nowrap;
+text-decoration: none;
+
+}
+
+.sidebar ul li a .icon {
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 50px;
+  height: 30px;
+  font-size: 1.5em;
+  margin-top: 1.6em;
+
+}
+
+.sidebar ul li a .text {
+
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 1em ;
+  letter-spacing: 0.05em;
+  margin-top: 2.5em;
+  
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 /* ---------Sidebar Einde */
 
@@ -149,3 +216,7 @@ footer{
   display: flex;
   justify-content: baseline;  
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 970d5f91f4e62be1d30ee838f96c15615502c299
