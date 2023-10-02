@@ -34,17 +34,21 @@ padding: 0;
 box-sizing: border-box;
 grid-area: subnav;
 
+
 }
 
 .sidebar {
 
 position: absolute;
 width: 60px;
-height: 100%;
+
 background-color: lightgrey;
 overflow: hidden;
 transition: 0.5s;
-list-style-type: none;}
+list-style-type: none;
+height: 280%;
+}
+
 
 .sidebar:hover {
 
