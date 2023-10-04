@@ -20,7 +20,7 @@ body {
 }
 
 header {
-grid-area: header;
+  grid-area: header;
 }
 
 /* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
@@ -28,79 +28,58 @@ Algemene styling voor de sidebar dus */
 
 
 nav {
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-grid-area: subnav;
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  grid-area: subnav;
 }
 
 .sidebar {
-
-position: absolute;
-width: 60px;
-
-background-color: lightgrey;
-overflow: hidden;
-transition: 0.5s;
-list-style-type: none;
-height: 280%;
+  position: absolute;
+  width: 60px;
+  background-color: lightgrey;
+  overflow: hidden;
+  transition: 0.5s;
+  list-style-type: none;
+  height: 280%;
 }
 
 
 .sidebar:hover {
-
   width: 11em;
-
 }
 nav img{
-
   width: 1em;
-
 }
 
 .sidebar ul {
-
   height: 100%;
   position: relative;
-
-  
 }
 
 .sidebar ul li a:hover
-
 {
 
 opacity: 50%;
 }
 
 .sidebar ul li {
-
 list-style: none;
 margin-top: 1em;
-
 }
 
 .sidebar ul li:hover {
-
   background: lightgrey;
-
 }
 
 .sidebar ul li a {
-
   position: relative;
   display: flex;
-
-white-space: nowrap;
-text-decoration: none;
-
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .sidebar ul li a .icon {
-
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -109,11 +88,9 @@ text-decoration: none;
   height: 30px;
   font-size: 1.5em;
   margin-top: 1.6em;
-
 }
 
 .sidebar ul li a .text {
-
   position: relative;
   height: 30px;
   display: flex;
@@ -121,22 +98,7 @@ text-decoration: none;
   font-size: 1em ;
   letter-spacing: 0.05em;
   margin-top: 2.5em;
-  
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 /* ---------Sidebar Einde */
 
@@ -218,7 +180,7 @@ footer{
   background-color: var(--white);
   grid-area: footer;
   display: flex;
-  justify-content: baseline;  
+  justify-content: baseline;
 }
 <<<<<<< HEAD
 =======
