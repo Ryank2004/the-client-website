@@ -2,8 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* kleur aanpassing */
@@ -14,19 +13,15 @@
 body {
   display: grid;
   grid-template-areas:
-    "header"
-    "subnav"
-    "main"
-    "footer";
+    'header'
+    'subnav'
+    'main'
+    'footer';
 }
 
-
-  header {
-    grid-area: header;
-    background-color: #46aa64;
-    height: 5em;
-  }
-
+header {
+  grid-area: header;
+}
 
 /* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
 Algemene styling voor de sidebar dus */
@@ -36,18 +31,6 @@ nav {
   padding: 0;
   box-sizing: border-box;
   grid-area: subnav;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  grid-area: subnav;
-}
-
-nav button {
-
-background-color: lightgray;
-margin-bottom: 5em;
-
-
 }
 
 .sidebar {
@@ -60,19 +43,16 @@ margin-bottom: 5em;
   height: 280%;
 }
 
+
 .sidebar:hover {
   width: 11em;
 }
-
-nav img {
+nav img{
   width: 1em;
 }
 
 .sidebar ul {
   height: 100%;
-
-  position: relative;
-
   position: relative;
 }
 
@@ -81,8 +61,8 @@ nav img {
 }
 
 .sidebar ul li {
-  list-style: none;
-  margin-top: 1em;
+list-style: none;
+margin-top: 1em;
 }
 
 .sidebar ul li:hover {
@@ -112,7 +92,7 @@ nav img {
   height: 30px;
   display: flex;
   align-items: center;
-  font-size: 1em;
+  font-size: 1em ;
   letter-spacing: 0.05em;
   margin-top: 2.5em;
 }
@@ -120,31 +100,29 @@ nav img {
 /* ---------Sidebar Einde */
 
 header ul {
-  height: 80px;
-  background: #46aa64;
+  height: 5em;
+  background:#46AA64;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 1em;
   grid-area: header;
+  color: black;
 }
 
-.logo {
-  color: #0a3250;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 2rem;
+/* Logo */
+header ul p {
+  font-size: 2rem;
 }
 
 header ul a {
   text-decoration: none;
-  color: #0a3250;
+  color: black;
 }
 
 nav ul a {
   text-decoration: none;
-  color: #0a3250;
+  color: black;
   padding: 0 1.5rem;
 }
 
@@ -177,21 +155,22 @@ main li {
 
 main ul a {
   text-decoration: none;
-  color: #0a3250;
+  color: #0A3250;
 }
+
 
 @media (min-width: 40rem) {
   body {
     grid-template-columns: 10rem 1fr;
     grid-template-areas:
-      "header header"
-      "subnav main"
-      "footer footer";
+      'header header'
+      'subnav main'
+      'footer footer';
   }
 }
 
 /* styling footer */
-footer {
+footer{
   background-color: var(--white);
   grid-area: footer;
   display: flex;
