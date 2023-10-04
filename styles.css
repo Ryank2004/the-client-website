@@ -34,7 +34,6 @@ padding: 0;
 box-sizing: border-box;
 grid-area: subnav;
 
-
 }
 
 .sidebar {
@@ -51,22 +50,16 @@ height: 280%;
 
 
 .sidebar:hover {
-
   width: 11em;
-
 }
+
 nav img{
-
   width: 1em;
-
 }
 
 .sidebar ul {
-
   height: 100%;
-  position: relative;
-
-  
+  position: relative; 
 }
 
 .sidebar ul li a:hover
