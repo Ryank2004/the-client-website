@@ -35,13 +35,12 @@ nav {
 }
 
 .sidebar {
-  position: absolute;
   width: 60px;
   background-color: lightgrey;
   overflow: hidden;
   transition: 0.5s;
   list-style-type: none;
-  height: 280%;
+  height: 100%;
 }
 
 .sidebar:hover {
@@ -193,8 +192,27 @@ main ul a li h2 {
 
 /* styling footer */
 footer {
-  background-color: var(--white);
+  height: 20em;
+  background: #0a3250;
+  padding: 3em;
+  color: white;
   grid-area: footer;
-  display: flex;
-  justify-content: baseline;
+  font-size: 1.1em;
+  font-weight: 500;
 }
+
+footer div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+footer li {
+
+font-size: 0.8em;
+font-weight: none;
+margin-top: 5em;
+
+
+}
+
+
