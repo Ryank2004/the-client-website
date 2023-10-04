@@ -101,13 +101,13 @@ nav img {
 
 header ul {
   height: 5em;
-  background: rgba(10, 50, 80, 1);
+  background: #0a3250;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   grid-area: header;
-  color: white;
+  color: black;
 }
 
 /* Logo */
@@ -117,13 +117,13 @@ header ul p {
 
 header ul a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 nav ul a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
   padding: 0 1.5rem;
-  color: black;
 }
 
 main {
@@ -163,6 +163,7 @@ main ul a {
   color: #0a3250;
 }
 
+/* styling van de images in de kaartjes */
 main ul a img {
   position: relative;
   bottom: 2em;
@@ -173,6 +174,7 @@ main ul a img {
   align-items: center;
 }
 
+/* styling van de tekst in de kaartjes */
 main ul a li h2 {
   position: relative;
   font-size: 1.5em;
