@@ -37,7 +37,6 @@ nav {
 .sidebar {
   position: absolute;
   width: 60px;
-
   background-color: lightgrey;
   overflow: hidden;
   transition: 0.5s;
@@ -73,7 +72,6 @@ nav img {
 .sidebar ul li a {
   position: relative;
   display: flex;
-
   white-space: nowrap;
   text-decoration: none;
 }
@@ -102,31 +100,29 @@ nav img {
 /* ---------Sidebar Einde */
 
 header ul {
-  height: 80px;
+  height: 5em;
   background: #46aa64;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 1em;
   grid-area: header;
+  color: black;
 }
 
-.logo {
-  color: #0a3250;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 2rem;
+/* Logo */
+header ul p {
+  font-size: 2rem;
 }
 
 header ul a {
   text-decoration: none;
-  color: #0a3250;
+  color: black;
 }
 
 nav ul a {
   text-decoration: none;
-  color: #0a3250;
+  color: black;
   padding: 0 1.5rem;
 }
 
