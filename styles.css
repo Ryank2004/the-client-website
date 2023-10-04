@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* kleur aanpassing */
@@ -13,94 +14,71 @@
 body {
   display: grid;
   grid-template-areas:
-    'header'
-    'subnav'
-    'main'
-    'footer';
+    "header"
+    "subnav"
+    "main"
+    "footer";
 }
 
 header {
-grid-area: header;
+  grid-area: header;
 }
 
 /* sidebar Menu... Ik moet nog afmaken maar de HTML staat goed voor nu. 
 Algemene styling voor de sidebar dus */
 
-
 nav {
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-grid-area: subnav;
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  grid-area: subnav;
 }
 
 .sidebar {
+  position: absolute;
+  width: 60px;
 
-position: absolute;
-width: 60px;
-
-background-color: lightgrey;
-overflow: hidden;
-transition: 0.5s;
-list-style-type: none;
-height: 280%;
+  background-color: lightgrey;
+  overflow: hidden;
+  transition: 0.5s;
+  list-style-type: none;
+  height: 280%;
 }
-
 
 .sidebar:hover {
-
   width: 11em;
-
 }
-nav img{
-
+nav img {
   width: 1em;
-
 }
 
 .sidebar ul {
-
   height: 100%;
   position: relative;
-
-  
 }
 
-.sidebar ul li a:hover
-
-{
-
-opacity: 50%;
+.sidebar ul li a:hover {
+  opacity: 50%;
 }
 
 .sidebar ul li {
-
-list-style: none;
-margin-top: 1em;
-
+  list-style: none;
+  margin-top: 1em;
 }
 
 .sidebar ul li:hover {
-
   background: lightgrey;
-
 }
 
 .sidebar ul li a {
-
   position: relative;
   display: flex;
 
-white-space: nowrap;
-text-decoration: none;
-
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .sidebar ul li a .icon {
-
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -109,40 +87,23 @@ text-decoration: none;
   height: 30px;
   font-size: 1.5em;
   margin-top: 1.6em;
-
 }
 
 .sidebar ul li a .text {
-
   position: relative;
   height: 30px;
   display: flex;
   align-items: center;
-  font-size: 1em ;
+  font-size: 1em;
   letter-spacing: 0.05em;
   margin-top: 2.5em;
-  
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 /* ---------Sidebar Einde */
 
 header ul {
   height: 80px;
-  background:#46AA64;
+  background: #46aa64;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,22 +112,21 @@ header ul {
 }
 
 .logo {
-  color: #0A3250;
+  color: #0a3250;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
   padding: 2rem;
 }
 
-
 header ul a {
   text-decoration: none;
-  color: #0A3250;
+  color: #0a3250;
 }
 
 nav ul a {
   text-decoration: none;
-  color: #0A3250;
+  color: #0a3250;
   padding: 0 1.5rem;
 }
 
@@ -191,36 +151,54 @@ main ul {
 main li {
   display: block;
   padding: 2em;
-  width: 25em;
-  height: 15em;
-  background: whitesmoke;
-  border-radius: 1rem;
+  width: 18em;
+  height: 25em;
+  background: rgb(245, 245, 245);
+  border: 0.15rem solid;
+  background-image: linear-gradient(
+    180deg,
+    rgba(10, 50, 80, 1) 0% 42%,
+    rgba(255, 255, 255, 1) 42% 100%
+  );
 }
 
 main ul a {
   text-decoration: none;
-  color: #0A3250;
+  color: #0a3250;
 }
 
+main ul a img {
+  position: relative;
+  bottom: 2em;
+  right: 2em;
+  height: 10em;
+  width: 17.75em;
+  justify-content: center;
+  align-items: center;
+}
+
+main ul a li h2 {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  bottom: 0.4em;
+  /* top: 1.5em; */
+}
 
 @media (min-width: 40rem) {
   body {
     grid-template-columns: 10rem 1fr;
     grid-template-areas:
-      'header header'
-      'subnav main'
-      'footer footer';
+      "header header"
+      "subnav main"
+      "footer footer";
   }
 }
 
 /* styling footer */
-footer{
+footer {
   background-color: var(--white);
   grid-area: footer;
   display: flex;
-  justify-content: baseline;  
+  justify-content: baseline;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 970d5f91f4e62be1d30ee838f96c15615502c299
