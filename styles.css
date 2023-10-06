@@ -35,13 +35,12 @@ nav {
 }
 
 .sidebar {
-  position: absolute;
   width: 60px;
   background-color: lightgrey;
   overflow: hidden;
   transition: 0.5s;
   list-style-type: none;
-  height: 280%;
+  height: 100%;
 }
 
 .sidebar:hover {
@@ -101,7 +100,7 @@ nav img {
 
 header ul {
   height: 5em;
-  background: rgba(10, 50, 80, 1);
+  background: #0a3250;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,13 +116,15 @@ header ul p {
 
 header ul a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 2em;
 }
 
 nav ul a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
   padding: 0 1.5rem;
-  color: black;
 }
 
 main {
@@ -163,6 +164,7 @@ main ul a {
   color: #0a3250;
 }
 
+/* styling van de images in de kaartjes */
 main ul a img {
   position: relative;
   bottom: 2em;
@@ -173,6 +175,7 @@ main ul a img {
   align-items: center;
 }
 
+/* styling van de tekst in de kaartjes */
 main ul a li h2 {
   position: relative;
   font-size: 1.5em;
@@ -193,8 +196,27 @@ main ul a li h2 {
 
 /* styling footer */
 footer {
-  background-color: var(--white);
+  height: 15em;
+  background: #0a3250;
+  padding: 3em;
+  color: white;
   grid-area: footer;
-  display: flex;
-  justify-content: baseline;
+  font-size: 1.1em;
+  font-weight: 500;
 }
+
+footer div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
+
+footer li {
+
+font-size: 0.8em;
+font-weight: none;
+margin-top: 5em;
+
+
+}
+
+
