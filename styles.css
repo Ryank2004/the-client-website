@@ -117,6 +117,8 @@ header ul p {
 header ul a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 2em;
 }
 
 nav ul a {
