@@ -87,6 +87,7 @@ nav img {
 }
 
 .sidebar ul li a .text {
+  color: black;
   position: relative;
   height: 30px;
   display: flex;
