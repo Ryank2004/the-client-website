@@ -35,7 +35,7 @@ nav {
 }
 
 .sidebar {
-  width: 60px;
+  width: 4.4em;
   background-color: lightgrey;
   overflow: hidden;
   transition: 0.5s;
@@ -78,23 +78,23 @@ nav img {
 .sidebar ul li a .icon {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   align-items: center;
   min-width: 50px;
-  height: 30px;
+  height: 2em;
   font-size: 1.5em;
-  margin-top: 1.6em;
+  margin-bottom: 1em;
 }
 
 .sidebar ul li a .text {
   color: black;
   position: relative;
-  height: 30px;
+  height: 3.5em;
   display: flex;
   align-items: center;
   font-size: 1em;
   letter-spacing: 0.05em;
-  margin-top: 2.5em;
+  margin-bottom: 1em;
 }
 
 /* ---------Sidebar Einde */
