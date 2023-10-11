@@ -196,28 +196,30 @@ main ul a li h2 {
 }
 
 /* styling footer */
+
 footer {
-  height: 15em;
-  background: #0a3250;
-  padding: 3em;
-  color: white;
   grid-area: footer;
-  font-size: 1.1em;
-  font-weight: 500;
+  background: rgba(10, 50, 80, 1) 0% 42%;
+  width: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.3em;
 }
 
 footer div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  text-align: center;
 }
 
-footer li {
+footer div h3 {
 
-font-size: 0.8em;
-font-weight: none;
-margin-top: 5em;
-
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
 
 }
 
-
+footer img {
+  width: 2em;
+  margin-top: 1em;
+}
