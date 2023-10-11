@@ -53,6 +53,7 @@ nav img {
 .sidebar ul {
   height: 100%;
   position: relative;
+  width: 5em;
 }
 
 .sidebar ul li a:hover {
@@ -124,7 +125,7 @@ header ul a {
 
 nav ul a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: black;
   padding: 0 1.5rem;
 }
 
