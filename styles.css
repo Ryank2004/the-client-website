@@ -45,11 +45,12 @@ button {
   background-color: #0a3250;
   display: flex;
   justify-content: center;
+  transition: 0.2s;
+  border-radius: .3em;
 }
 
 header button:hover {
-  font-size: 1.5em;
-  transition: 0.2s;
+  font-size: 1.7em;
   cursor: pointer;
 }
 
