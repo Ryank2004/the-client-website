@@ -18,7 +18,7 @@ body {
 
 header {
   grid-area: h;
-  background: lightgray;
+  background: #46637A;
   padding: 3em;
 }
 
@@ -27,7 +27,7 @@ header h1 {
   justify-content: center;
   font-weight: 600;
   font-size: 3em;
-  color: black;
+  color: white;
 }
 
 h2 {
@@ -74,7 +74,7 @@ a {
 
 nav {
   grid-area: n;
-  background: lightgray;
+  background:#46637A;
   padding: 2em;
 }
 
