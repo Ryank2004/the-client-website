@@ -1,4 +1,4 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md]([docs/INSTRUCTIONS.md](https://github.com/fdnd-task/the-client-website/blob/main/docs/INSTRUCTIONS.md))
 
 # Titel
 Website De Hallen
@@ -11,7 +11,7 @@ Website De Hallen
   * [Licentie](#licentie)
 
 ## Beschrijving
-We hebben een website gemaakt voor De Hallen in Amsterdam West waarin we een overzicht hebben gemaakt van alle buurtinitiatieven die voor de bewoners in de buurt te bezoeken valt. <!-- Voeg een mooie poster visual toe 📸 --><!-- Voeg een link toe naar Github Pages 🌐-->
+We hebben een website gemaakt voor De Hallen in Amsterdam West waarin we een overzicht hebben gemaakt van alle buurtinitiatieven die voor de bewoners in de buurt te bezoeken valt. Het is opgedeeld in 2 onderdelen. In Buurtinitiatieven en een marktplaats achtige site, waar je jezelf kan aanbieden voor een service, of je kan vragen naar een service. <!-- Voeg een mooie poster visual toe 📸 --><!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
