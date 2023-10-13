@@ -86,11 +86,12 @@ nav {
   grid-area: n;
   background:#46637A;
   padding: 2em;
+  
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 nav li {
