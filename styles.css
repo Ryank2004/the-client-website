@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #46637A;
+}
+
 body {
   display: grid;
   grid-template-areas: 
@@ -18,7 +22,7 @@ body {
 
 header {
   grid-area: h;
-  background: #46637A;
+  background: var(--blue);
   padding: 3em;
 }
 
@@ -41,8 +45,8 @@ button {
   border: none;
   font-size: 1.4em;
   font-weight: 600;
-  color: white;
-  background-color: #0a3250;
+  color: var(--blue);
+  background-color: white;
   display: flex;
   justify-content: center;
   transition: 0.2s;
