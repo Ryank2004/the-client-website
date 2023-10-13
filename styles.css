@@ -17,7 +17,7 @@ body {
   grid-template-areas: 
   'n n n n'
   'h h h h'
-  '. m m .'
+  'm m m .'
   'f f f f';
   grid-template-rows: 0.2fr 1fr 3fr 0.2fr;
   grid-template-columns: 1fr 3fr 3fr 1fr;
@@ -78,7 +78,7 @@ h4 {
 }
 
 a {
-  color: black;
+  color:white;
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ nav {
   grid-area: n;
   background:#46637A;
   padding: 2em;
-  
+  font-family: "customfont";
 }
 
 nav ul {
@@ -97,6 +97,7 @@ nav ul {
 nav li {
   list-style: none;
   font-weight: 600;
+  margin-right: 30px;
 }
 
 main {
