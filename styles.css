@@ -8,6 +8,10 @@
   --blue: #46637A;
 }
 
+@font-face {
+  font-family: "customfont";
+  src: url(SairaCondensed-Bold.ttf);
+}
 body {
   display: grid;
   grid-template-areas: 
@@ -17,21 +21,23 @@ body {
   'f f f f';
   grid-template-rows: 0.2fr 1fr 3fr 0.2fr;
   grid-template-columns: 1fr 3fr 3fr 1fr;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 header {
   grid-area: h;
   background: var(--blue);
   padding: 3em;
+  font-family: "customfont";
 }
 
 header h1 {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 4em;
   color: white;
+  font-family: "customfont";
 }
 
 h2 {
