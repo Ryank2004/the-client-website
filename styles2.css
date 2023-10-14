@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: #46637a;
+  --lightblue: #eff7ff;
+}
+
+@font-face {
+  font-family: "customfont";
+  src: url(SairaCondensed-Bold.ttf);
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "n n n n"
+    "h h h h"
+    "m m m m"
+    "f f f f";
+  grid-template-rows: 0.2fr 1fr 3fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* button in de header */
+.doemee {
+  padding: 12px;
+  text-decoration: none;
+  border: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--blue);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  grid-area: n;
+  background: #46637a;
+  padding: 2em;
+  font-family: "customfont";
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aanmeldknop {
+  background: white;
+  color: var(--blue);
+  padding: 0 0.5em;
+  border-radius: 15px;
+}
+
+nav li {
+  list-style: none;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+header {
+  grid-area: h;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 4em;
+  color: #212930;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+}
+
+header h3 {
+  margin-top: 3em;
+  margin-left: 8em;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header div {
+  margin-top: 3em;
+  margin-left: 8em;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header ul {
+
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 8em;
+  list-style: none;
+  
+
+}
+
+header li {
+
+  background-color: var(--blue);
+  color: white;
+  margin-left: 1em;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 600;
+
+
+}
+
