@@ -99,24 +99,27 @@ header div {
 }
 
 header ul {
-
   display: flex;
   justify-content: flex-start;
   margin-left: 8em;
   list-style: none;
-  
-
 }
-
 header li {
-
   background-color: var(--blue);
   color: white;
   margin-left: 1em;
   border-radius: 30px;
   padding: 10px;
   font-weight: 600;
-
-
+  margin-top: 1em;
 }
 
+.line {
+
+  height: 3px;
+  background-color: var(--blue);
+  width: 100%;
+  margin: 0%;
+  margin-top: 3em;
+
+}
