@@ -6,6 +6,7 @@
 
 :root {
   --blue: #46637A;
+  --lightblue: #eff7ff;
 }
 
 @font-face {
@@ -45,7 +46,8 @@ h2 {
   justify-content: center;
 }
 
-button {
+/* button in de header */
+.doemee {
   padding: 12px;
   text-decoration: none;
   border: none;
@@ -59,21 +61,8 @@ button {
 }
 
 header button:hover {
-  font-size: 1.7em;
   cursor: pointer;
-}
-
-h3 {
-  display: flex;
-  justify-content: left;
-  grid-area: h;
-}
-
-h4 {
-  display: flex;
-  justify-content: left;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  font-size: 1.5em;
 }
 
 a {
@@ -109,7 +98,6 @@ nav li {
 main {
   grid-area: m;
   background: white;
-  padding: 5em;
 }
 
 article {
@@ -117,20 +105,47 @@ article {
   grid-template-areas: 
   'img h'
   'img p';
+  padding: 5em;
 }
 
 article img {
   grid-area: img;
 }
 
+h3 {
+  font-family: "customfont";
+  display: flex;
+  justify-content: left;
+  grid-area: h;
+  font-size: 3em;
+  margin-left: 1em;
+}
+
 article p {
   grid area: p;
+  font-family: "customfont";
+  font-size: 1em;
+  width: 70%;
+  margin-left: 3em;
+}
+
+section {
+  background: var(--lightblue);
+  padding: 7em;
+  width: 100%;
+}
+
+h4 {
+  font-family: "customfont";
+  font-size: 3em;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 1em;
 }
 
 section ul {
   display: flex;
   justify-content: center;
-  opacity: 50%;
   gap: 1em;
   overflow-y: hidden;
 }
@@ -139,7 +154,26 @@ section li {
   list-style: none;
 }
 
+.bekijkmeer {
+  padding: 12px;
+  text-decoration: none;
+  border: none;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: white;
+  background: var(--blue);
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
 footer {
   grid-area: f;
-  background: lightgrey;
+  background: var(--blue);
+  margin-top: 5em;
+  padding: 5em;
+  font-family: "customfont";
+  color: white;
+  display: flex;
+  justify-content: end;
 }
